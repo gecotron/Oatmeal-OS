@@ -1,3 +1,3 @@
 # Oatmeal-OS
-Personal Linux Distro.
-No clue where this will go or what it will be, just wanted to try making a distro. Will probably be based on arch or something.
+Custom linux distro, made to be out of the box-ish.
+Still very much in progress, no clue what I going to do in particular, just a personal project
