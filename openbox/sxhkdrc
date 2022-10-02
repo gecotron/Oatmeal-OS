@@ -1,0 +1,25 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	urxvt
+
+# program launcher
+super + @space
+	rofi -show drun
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# kill openbox
+super + alt + q
+	pkill openbox
+
+super + alt + p
+	scrot
+
+super + q
+	xkill -id `xprop -root _NET_ACTIVE_WINDOW | cut -d\# -f2`

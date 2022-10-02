@@ -1,0 +1,4 @@
+feh --bg-scale ~/sea.jpg
+polybar mainbar &
+polybar worklabs &
+sxhkd -c ~/.config/openbox/sxhkdrc &
