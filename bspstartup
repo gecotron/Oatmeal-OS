@@ -2,7 +2,7 @@
 xsetroot -cursor_name left_ptr
 xrdb merge ~/.Xresources
 xset +fp ~/.fonts/misc &
-feh --bg-scale ~/blockwavemoon.png &
+feh --bg-scale ~/.config/bspwm/wallpaper.png &
 polybar -c ~/.config/polybar/bspbar.ini topbar &
 sxhkd &
 exec bspwm
