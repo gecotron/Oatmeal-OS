@@ -1,7 +1,11 @@
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-" Declare the list of plugins.
+" autocomplete
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+
+" Quality of life
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'David-Kunz/markid'
 Plug 'tpope/vim-sensible'
@@ -10,12 +14,16 @@ Plug 'junegunn/seoul256.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+
+" Pretty things
 Plug 'rose-pine/neovim', { 'as': 'rose-pine' }
 Plug 'romgrk/barbar.nvim'
 Plug 'xiyaowong/nvim-transparent' 
 Plug 'nvim-tree/nvim-tree.lua'
-" List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+
+set completeopt=menu,menuone,noselect
 
 colorscheme rose-pine
 
@@ -23,8 +31,7 @@ set termguicolors
 set t_Co=256
 
 
-
-lua << End
+lua <<EOF
 require('lualine').setup()
 require("rose-pine").setup()
 
@@ -48,5 +55,8 @@ require("transparent").setup({
   },
   exclude = {}, -- table: groups you don't want to clear
 })
-require('nvim-treesitter.configs').setup({markid = { enable = true }})  -- At the bottom of your init.vim, keep all configs on one line
-End
+require('nvim-treesitter.configs').setup {
+	highlight = { markid = true }
+}
+EOF
+

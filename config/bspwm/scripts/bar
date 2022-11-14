@@ -1,0 +1,7 @@
+#!/bin/bash
+conky | lemonbar \ 
+-f -*-pretzel-* \
+-f -*-waffle-* \
+-g x28 \
+-B "#141c21" \
+-F "#93a1a1"

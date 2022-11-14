@@ -1,7 +1,9 @@
 # Oatmeal-OS
 Personal Dotfiles/OS in progress
 
-## Screenshot
+## Screenshots
+![Empty desktop](empty.png)
+
 ![image of desktop](preview.png)
 
 ## Tiling Chaos
@@ -14,9 +16,10 @@ Make all shell scripts executable, ex. bspwmrc, bspfloat.sh and wifi-menu.sh
 Install the following:
 
 ```
+alacritty
 urxvt
 bspwm
-Polybar
+polybar
 feh
 rofi
 neovim + vim-plug
@@ -29,6 +32,6 @@ Open tty, with zsh as default zsh and run `startbsp` bspwm should open with back
 open urxvt and open neovim, ignore errors and run `:PlugInstall` to install plugins, no errors should show now
 
 # Roadmap
-- [ ] Figure out which WM to use (Currently BSPWM, likely to change)
+- [x] Figure out which WM to use (BSPWM)
 - [ ] Learn and make EWW bar + widgets
 - [ ] Package everything

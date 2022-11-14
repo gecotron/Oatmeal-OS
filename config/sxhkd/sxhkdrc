@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	alacritty
 
 super + shift + Return
 	~/.config/bspwm/scripts/bspfloat.sh urxvt
@@ -80,7 +80,7 @@ super + bracket{left,right}
 
 # focus the last node/desktop
 super + {grave,Tab}
-	bspc {node,desktop} -f last
+	rofi -show window
 
 # focus the older or newer node in the focus history
 super + {o,i}

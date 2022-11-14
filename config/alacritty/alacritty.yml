@@ -1,0 +1,8 @@
+import:
+  - ~/.config/alacritty/rose-pine.yml
+font:
+  normal:
+    family: Jetbrains Mono Nerd Font
+    style: Regular
+
+  size: 6
