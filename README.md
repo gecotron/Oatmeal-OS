@@ -25,6 +25,7 @@ rofi
 neovim + vim-plug
 zsh + oh-my-zsh
 betterlockscreen
+picom
 ```
 
 ### Setup
