@@ -22,6 +22,7 @@ rofi
 neovim + vim-plug
 zsh + oh-my-zsh
 betterlockscreen
+picom
 ```
 All of these should be available in the AUR
 
