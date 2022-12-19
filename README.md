@@ -24,7 +24,7 @@ zsh + oh-my-zsh
 betterlockscreen
 picom
 ```
-All of these should be available in the AUR
+All of these should be available in the AUR or in Repos
 
 ### Setup
 Open tty, with zsh as default zsh and run `startbsp` bspwm should open with background and polybar, if there are errors, make sure bspwmrc is executable and is in ~/.config/bspwm open Alacritty with `Super + Return` and open neovim, ignore errors and run `:PlugInstall` to install plugins, no errors should show now
