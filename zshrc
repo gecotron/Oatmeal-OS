@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+#(cat ~/.cache/wal/sequences &)
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 # source rosepine-term
@@ -99,6 +99,17 @@ export EDITOR='nvim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias bspbar="polybar -c ~/.config/polybar/bspbar.ini"
+alias bspbar="polybar -c ~/.config/polybar/walbar.ini"
 alias bspfloat="~/.config/bspwm/scripts/./bspfloat.sh"
 alias startbsp="startx ~/.bspstartup"
+alias spoingus="figlet SPOINGUS"
+
+
+wal-scale() {
+    wal -n -i "$@"
+    feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
+    ~/.config/bspwm/scripts/upbspcolors
+}
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

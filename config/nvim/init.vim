@@ -16,7 +16,7 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 " Pretty things
-Plug 'rose-pine/neovim', { 'as': 'rose-pine' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'romgrk/barbar.nvim'
 Plug 'xiyaowong/nvim-transparent' 
 Plug 'nvim-tree/nvim-tree.lua'
@@ -25,15 +25,11 @@ call plug#end()
 
 set completeopt=menu,menuone,noselect
 
-colorscheme rose-pine
-
 set termguicolors
-set t_Co=256
+colorscheme catppuccin-frappe
 
-
-lua <<EOF
+lua << EOF
 require('lualine').setup()
-require("rose-pine").setup()
 
 require("nvim-highlight-colors").setup {
 	render = 'background', -- or 'foreground' or 'first_column'
@@ -41,7 +37,7 @@ require("nvim-highlight-colors").setup {
 	enable_tailwind = true
 }
 require("transparent").setup({
-  enable = true, -- boolean: enable transparent
+  enable = false, -- boolean: enable transparent
   extra_groups = { -- table/string: additional groups that should be cleared
     -- In particular, when you set it to 'all', that means all available groups
 

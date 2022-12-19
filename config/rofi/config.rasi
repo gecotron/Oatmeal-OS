@@ -1,0 +1,9 @@
+configuration {
+	modi:                       "drun";
+    show-icons:                 false;
+    display-drun:               "";
+	drun-display-format:        "{name}";
+}
+
+@theme "/home/gecotron/.local/share/rofi/themes/theme.rasi"
+//@theme "/home/gecotron/.cache/wal/colors-rofi-dark.rasi"
